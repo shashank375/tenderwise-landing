@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* This applies your default fonts globally */
+@layer base {
+  body {
+    @apply font-lato; /* Makes all standard text use Lato */
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair; /* Makes all headings use Playfair */
+  }
+}
