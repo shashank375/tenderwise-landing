@@ -1,12 +1,3 @@
-import step1Icon from "../assets/step1-icon.png";
-import step2Icon from "../assets/step2-icon.png";
-import step3Icon from "../assets/step3-icon.png";
-import step4Icon from "../assets/step4-icon.png";
-
-import step1Img from "../assets/step1-img.png";
-import step2Img from "../assets/step2-img.png";
-import step3Img from "../assets/step3-img.png";
-import step4Img from "../assets/step4-img.png";
 
 export default function HowItWorks() {
   return (
@@ -42,50 +33,50 @@ export default function HowItWorks() {
             
             {/* Step 1 - Scaled down max-width, padding, text, and icon sizes */}
             <div className="bg-white rounded-[24px] p-5 flex flex-col items-center text-center shadow-sm border border-[#F0EBFA] w-full max-w-[280px] h-full">
-              <img src={step1Icon} alt="Step 1 Icon" className="w-14 h-14 object-contain mb-4" />
+              <img src="/assets/step1-icon.png" alt="Step 1 Icon" className="w-14 h-14 object-contain mb-4" />
               <h3 className="font-playfair text-[20px] font-bold text-gray-900 mb-2">
                 Free account banao
               </h3>
               <p className="font-lato text-[14px] text-gray-500 mb-5 flex-grow leading-relaxed">
                 WhatsApp number daalo, OTP enter karo, bas ho gaya.
               </p>
-              <img src={step1Img} alt="Create Account" className="w-[85%] mt-auto object-contain drop-shadow-sm" />
+              <img src="/assets/step1-img.png" alt="Create Account" className="w-[85%] mt-auto object-contain drop-shadow-sm" />
             </div>
 
             {/* Step 2 - Scaled down max-width, padding, text, and icon sizes */}
             <div className="bg-white rounded-[24px] p-5 flex flex-col items-center text-center shadow-sm border border-[#F0EBFA] w-full max-w-[280px] h-full">
-              <img src={step2Icon} alt="Step 2 Icon" className="w-14 h-14 object-contain mb-4" />
+              <img src="/assets/step2-icon.png" alt="Step 2 Icon" className="w-14 h-14 object-contain mb-4" />
               <h3 className="font-playfair text-[20px] font-bold text-gray-900 mb-2">
                 Apna filter set karo
               </h3>
               <p className="font-lato text-[14px] text-gray-500 mb-5 flex-grow leading-relaxed">
                 State, district, tender category aur authority chuno. TenderWise samajh jaayega aapko kya chahiye.
               </p>
-              <img src={step2Img} alt="Set Preferences" className="w-[85%] mt-auto object-contain drop-shadow-sm" />
+              <img src="/assets/step2-img.png" alt="Set Preferences" className="w-[85%] mt-auto object-contain drop-shadow-sm" />
             </div>
 
             {/* Step 3 - Scaled down max-width, padding, text, and icon sizes */}
             <div className="bg-white rounded-[24px] p-5 flex flex-col items-center text-center shadow-sm border border-[#F0EBFA] w-full max-w-[280px] h-full">
-              <img src={step3Icon} alt="Step 3 Icon" className="w-14 h-14 object-contain mb-4" />
+              <img src="/assets/step3-icon.png" alt="Step 3 Icon" className="w-14 h-14 object-contain mb-4" />
               <h3 className="font-playfair text-[20px] font-bold text-gray-900 mb-2">
                 Relevant tenders dekho
               </h3>
               <p className="font-lato text-[14px] text-gray-500 mb-5 flex-grow leading-relaxed">
                 Jo aapke kaam ke hain woh seedhe aapke home page par dikhenge. Koi aur tender dhundhana hai toh search mein dhundho.
               </p>
-              <img src={step3Img} alt="Matching Tenders" className="w-[90%] mt-auto object-contain drop-shadow-sm" />
+              <img src="/assets/step3-img.png" alt="Matching Tenders" className="w-[90%] mt-auto object-contain drop-shadow-sm" />
             </div>
 
             {/* Step 4 - Scaled down max-width, padding, text, and icon sizes */}
             <div className="bg-white rounded-[24px] p-5 flex flex-col items-center text-center shadow-sm border border-[#F0EBFA] w-full max-w-[280px] h-full">
-              <img src={step4Icon} alt="Step 4 Icon" className="w-14 h-14 object-contain mb-4" />
+              <img src="/assets/step4-icon.png" alt="Step 4 Icon" className="w-14 h-14 object-contain mb-4" />
               <h3 className="font-playfair text-[20px] font-bold text-gray-900 mb-2">
                 Deadline miss mat karo
               </h3>
               <p className="font-lato text-[14px] text-gray-500 mb-5 flex-grow leading-relaxed">
                 Tender deadline ka reminder lagao. Reminder seedha WhatsApp par aa jaayega.
               </p>
-              <img src={step4Img} alt="WhatsApp Reminder" className="w-[90%] mt-auto object-contain drop-shadow-sm" />
+              <img src="/assets/step4-img.png" alt="WhatsApp Reminder" className="w-[90%] mt-auto object-contain drop-shadow-sm" />
             </div>
 
           </div>       </div>

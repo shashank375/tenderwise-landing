@@ -1,26 +1,16 @@
-import handDrawnArrow from "../assets/hand-drawn-arrow.png";
-import civil from "../assets/category-civil.png";
-import roads from "../assets/category-roads.png";
-import buildings from "../assets/category-buildings.png";
-import irrigation from "../assets/category-irrigation.png";
-import electrical from "../assets/category-electrical.png";
-import mechanical from "../assets/category-mechanical.png";
-import solar from "../assets/category-solar.png";
-import epc from "../assets/category-epc.png";
-import supply from "../assets/category-supply.png";
-import services from "../assets/category-services.png";
+
 export default function WhoIsItFor() {
   const categories = [
-    { title: "Civil Work", img: civil },
-    { title: "Roads", img: roads },
-    { title: "Buildings", img: buildings },
-    { title: "Irrigation", img: irrigation },
-    { title: "Electrical", img: electrical },
-    { title: "Mechanical", img: mechanical },
-    { title: "Solar", img: solar },
-    { title: "EPC", img: epc },
-    { title: "Supply", img: supply },
-    { title: "Services", img: services },
+    { title: "Civil Work", img: "/assets/category-civil.png" },
+    { title: "Roads", img: "/assets/category-roads.png" },
+    { title: "Buildings", img: "/assets/category-buildings.png" },
+    { title: "Irrigation", img: "/assets/category-irrigation.png" },
+    { title: "Electrical", img: "/assets/category-electrical.png" },
+    { title: "Mechanical", img: "/assets/category-mechanical.png" },
+    { title: "Solar", img: "/assets/category-solar.png" },
+    { title: "EPC", img: "/assets/category-epc.png" },
+    { title: "Supply", img: "/assets/category-supply.png" },
+    { title: "Services", img: "/assets/category-services.png" },
   ];
 
   return (
@@ -55,7 +45,7 @@ export default function WhoIsItFor() {
               usi ke tenders hum dikhate hai..
             </span>
             <img
-  src={handDrawnArrow}
+  src="/assets/hand-drawn-arrow.png"
   alt="Arrow pointing to grid"
   style={{
     width: "300px",

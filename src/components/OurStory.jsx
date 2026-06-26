@@ -1,6 +1,3 @@
-import tornPaperStrip from "../assets/torn-paper-strip.png";
-import pinnedPaperBg from "../assets/pinned-paper-bg.png";
-import tenderwiseLogoIcon from "../assets/tenderwise-logo-icon.png";
 
 export default function OurStory() {
   return (
@@ -31,7 +28,7 @@ export default function OurStory() {
             
             {/* Strip 1 - Exact Size & Rotation (2.43 deg) */}
             <div className="relative w-full lg:w-[496.67px] h-[100px] lg:h-[144.51px] flex items-center transform -rotate-[2.43deg]">
-              <img src={tornPaperStrip} alt="Paper strip" className="absolute inset-0 w-full h-full object-fill drop-shadow-sm opacity-90" />
+              <img src="/assets/torn-paper-strip.png" alt="Paper strip" className="absolute inset-0 w-full h-full object-fill drop-shadow-sm opacity-90" />
               <div className="relative z-10 flex items-center gap-4 px-10 md:px-14 w-full text-left">
                 <div className="bg-[#472C70] rounded-full p-1.5 shrink-0">
                   <svg className="w-4 h-4 md:w-5 md:h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" /></svg>
@@ -42,7 +39,7 @@ export default function OurStory() {
 
             {/* Strip 2 - Exact Size & Rotation (-5.2 deg) */}
             <div className="relative w-full lg:w-[496.67px] h-[100px] lg:h-[144.51px] flex items-center transform -rotate-[-5.2deg]">
-              <img src={tornPaperStrip} alt="Paper strip" className="absolute inset-0 w-full h-full object-fill drop-shadow-sm opacity-90" />
+              <img src="/assets/torn-paper-strip.png" alt="Paper strip" className="absolute inset-0 w-full h-full object-fill drop-shadow-sm opacity-90" />
               <div className="relative z-10 flex items-center gap-4 px-10 md:px-14 w-full text-left">
                 <div className="bg-[#472C70] rounded-full p-1.5 shrink-0">
                   <svg className="w-4 h-4 md:w-5 md:h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" /></svg>
@@ -53,7 +50,7 @@ export default function OurStory() {
 
             {/* Strip 3 - Exact Size & Rotation (0 deg) */}
             <div className="relative w-full lg:w-[496.67px] h-[100px] lg:h-[144.51px] flex items-center transform rotate-0">
-              <img src={tornPaperStrip} alt="Paper strip" className="absolute inset-0 w-full h-full object-fill drop-shadow-sm opacity-90" />
+              <img src="/assets/torn-paper-strip.png" alt="Paper strip" className="absolute inset-0 w-full h-full object-fill drop-shadow-sm opacity-90" />
               <div className="relative z-10 flex items-center gap-4 px-10 md:px-14 w-full text-left">
                 <div className="bg-[#472C70] rounded-full p-1.5 shrink-0">
                   <svg className="w-4 h-4 md:w-5 md:h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" /></svg>
@@ -70,7 +67,7 @@ export default function OurStory() {
         <div className="relative w-full max-w-[661.33px] h-auto lg:h-[680px] mt-10 lg:mt-0 shrink-0">
           
           <img 
-            src={pinnedPaperBg} 
+            src="/assets/pinned-paper-bg.png" 
             alt="Pinned paper note" 
             className="absolute inset-0 w-full h-full object-fill drop-shadow-lg" 
           />
@@ -108,7 +105,7 @@ export default function OurStory() {
             {/* Footer with Logo */}
             <div className="flex items-center gap-4">
               <img 
-                src={tenderwiseLogoIcon} 
+                src="/assets/tenderwise-logo-icon.png" 
                 alt="TenderWise Logo" 
                 className="w-10 h-10 object-contain"
               />
