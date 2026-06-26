@@ -1,23 +1,27 @@
 import { Search, User } from "lucide-react"
-
+import tenderStack from "../assets/tender-stack.png"
+import searchIcon from "../assets/icon-search.png"
+import downloadIcon from "../assets/icon-download.png"
+import clockIcon from "../assets/icon-clock.png"
+import checkIcon from "../assets/icon-check.png"
 const features = [
   {
-    icon: "/src/assets/icon-search.png",
+    icon: searchIcon,
     title: "Tender Search",
     desc: "Find relevant tenders",
   },
   {
-    icon: "/src/assets/icon-download.png",
+    icon: downloadIcon,
     title: "Document Download",
     desc: "Instant & easy download",
   },
   {
-    icon: "/src/assets/icon-clock.png",
+    icon: clockIcon,
     title: "Deadline Reminder",
     desc: "Never miss a deadline",
   },
   {
-    icon: "/src/assets/icon-check.png",
+    icon: checkIcon,
     title: "100% Free",
     desc: "No hidden charges",
   },
@@ -92,7 +96,7 @@ export default function Hero() {
         {/* Right Content */}
         <div className="flex-1 flex justify-end items-start mt-[-60px]">
           <img
-            src="/src/assets/tender-stack.png"
+            src={tenderStack}
             alt="Tender Stack"
             className="w-full max-w-xl object-contain"
           />

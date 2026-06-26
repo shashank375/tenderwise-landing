@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom"
-
+import tenderwiseLogo from "../assets/tenderwise-logo.png"
 export default function Footer() {
   const navigate = useNavigate()
 
@@ -18,7 +18,7 @@ export default function Footer() {
 
           <div className="md:col-span-5 flex flex-col gap-5">
             <img
-              src="/src/assets/tenderwise-logo.png"
+              src={tenderwiseLogo}
               alt="TenderWise Logo"
               className="h-8 object-contain self-start cursor-pointer"
               onClick={() => navigate("/")}

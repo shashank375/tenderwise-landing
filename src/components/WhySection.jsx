@@ -1,3 +1,7 @@
+import withoutTenderwiseIcon from "../assets/icon-without-tenderwise.png";
+import withTenderwiseIcon from "../assets/icon-with-tenderwise.png";
+import badgeTenderwise from "../assets/badge-tenderwise.png";
+
 export default function WhySection() {
   return (
     <section id="kyun-banaya" className="bg-[#F8F6FF] py-24 px-6">
@@ -28,7 +32,7 @@ export default function WhySection() {
           {/* Changed padding from p-10 to p-8 to reduce empty box space */}
           <div className="bg-white rounded-[2rem] p-7 md:p-8 shadow-sm border border-gray-100 flex flex-col">
             <div className="flex items-center gap-4 mb-5">
-              <img src="/src/assets/icon-without-tenderwise.png" alt="Without TenderWise Icon" className="w-12 h-12 object-contain" />
+              <img src={withoutTenderwiseIcon} alt="Without TenderWise Icon" className="w-12 h-12 object-contain" />
               <div>
                 <h3 className="font-playfair text-[26px] font-bold text-gray-900">Without TenderWise</h3>
                 <p className="font-lato text-gray-500 text-sm mt-1">Jaisa abhi tak chalta aaya hai</p>
@@ -60,10 +64,10 @@ export default function WhySection() {
 
           {/* RIGHT CARD: With TenderWise */}
           <div className="bg-[#472C70] rounded-[2rem] p-7 md:p-8 shadow-xl text-white flex flex-col relative">
-            <img src="/src/assets/badge-tenderwise.png" alt="TenderWise Approved" className="absolute top-3 right-5 h-8 object-contain hidden sm:block" />
+            <img src={badgeTenderwise} alt="TenderWise Approved" className="absolute top-3 right-5 h-8 object-contain hidden sm:block" />
             
             <div className="flex items-center gap-4 mb-5">
-              <img src="/src/assets/icon-with-tenderwise.png" alt="With TenderWise Icon" className="w-12 h-12 object-contain" />
+              <img src={withTenderwiseIcon} alt="With TenderWise Icon" className="w-12 h-12 object-contain" />
               <div>
                 <h3 className="font-playfair text-[26px] font-bold text-white">With TenderWise</h3>
                 <p className="font-lato text-[#D8CFF2] text-sm mt-1">Contractors ka apna platform</p>

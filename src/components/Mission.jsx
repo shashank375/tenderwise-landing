@@ -1,11 +1,20 @@
+import missionBg from "../assets/mission-bg.png";
+import pinnedSquare from "../assets/pinned-square.png";
+
+import roadsImg from "../assets/mission-roads.png";
+import schoolImg from "../assets/mission-school.png";
+import hospitalImg from "../assets/mission-hospital.png";
+import waterImg from "../assets/mission-water.png";
+import infraImg from "../assets/mission-infra.png";
+
 export default function Mission() {
-  const cards = [
-    { title: "Roads", img: "mission-roads.png" },
-    { title: "School", img: "mission-school.png" },
-    { title: "Hospital", img: "mission-hospital.png" },
-    { title: "Water Supply", img: "mission-water.png" },
-    { title: "Infrastructure", img: "mission-infra.png" },
-  ];
+ const cards = [
+  { title: "Roads", img: roadsImg },
+  { title: "School", img: schoolImg },
+  { title: "Hospital", img: hospitalImg },
+  { title: "Water Supply", img: waterImg },
+  { title: "Infrastructure", img: infraImg },
+];
 
   return (
     // Section needs extra padding at the bottom (pb-[400px]) to reveal the skyline background
@@ -14,7 +23,7 @@ export default function Mission() {
       {/* Absolute Bottom Skyline Background */}
       {/* mix-blend-multiply seamlessly blends the sketch's white background into the page */}
      <img 
-        src="/src/assets/mission-bg.png" 
+        src={missionBg}
         alt="City Skyline Sketch" 
         className="absolute bottom-0 left-0 w-full h-[350px] md:h-[500px] lg:h-[650px] object-cover object-bottom z-0 mix-blend-multiply opacity-90"
       />
@@ -55,14 +64,14 @@ export default function Mission() {
             >
               {/* Paper Background Image */}
               <img 
-                src="/src/assets/pinned-square.png" 
+                src={pinnedSquare} 
                 alt="Paper Background" 
                 className="absolute inset-0 w-full h-full object-fill drop-shadow-md z-0" 
               />
               
               {/* Sketch Image */}
               <img 
-                src={`/src/assets/${card.img}`} 
+                src={card.img}
                 alt={card.title} 
                 className="relative z-10 w-full h-[65px] md:h-[85px] object-contain mb-3 mix-blend-multiply" 
               />

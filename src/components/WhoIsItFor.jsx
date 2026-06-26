@@ -1,15 +1,26 @@
+import handDrawnArrow from "../assets/hand-drawn-arrow.png";
+import civil from "../assets/category-civil.png";
+import roads from "../assets/category-roads.png";
+import buildings from "../assets/category-buildings.png";
+import irrigation from "../assets/category-irrigation.png";
+import electrical from "../assets/category-electrical.png";
+import mechanical from "../assets/category-mechanical.png";
+import solar from "../assets/category-solar.png";
+import epc from "../assets/category-epc.png";
+import supply from "../assets/category-supply.png";
+import services from "../assets/category-services.png";
 export default function WhoIsItFor() {
   const categories = [
-    { title: "Civil Work", img: "category-civil.png" },
-    { title: "Roads", img: "category-roads.png" },
-    { title: "Buildings", img: "category-buildings.png" },
-    { title: "Irrigation", img: "category-irrigation.png" },
-    { title: "Electrical", img: "category-electrical.png" },
-    { title: "Mechanical", img: "category-mechanical.png" },
-    { title: "Solar", img: "category-solar.png" },
-    { title: "EPC", img: "category-epc.png" },
-    { title: "Supply", img: "category-supply.png" },
-    { title: "Services", img: "category-services.png" },
+    { title: "Civil Work", img: civil },
+    { title: "Roads", img: roads },
+    { title: "Buildings", img: buildings },
+    { title: "Irrigation", img: irrigation },
+    { title: "Electrical", img: electrical },
+    { title: "Mechanical", img: mechanical },
+    { title: "Solar", img: solar },
+    { title: "EPC", img: epc },
+    { title: "Supply", img: supply },
+    { title: "Services", img: services },
   ];
 
   return (
@@ -44,7 +55,7 @@ export default function WhoIsItFor() {
               usi ke tenders hum dikhate hai..
             </span>
             <img
-  src="/src/assets/hand-drawn-arrow.png"
+  src={handDrawnArrow}
   alt="Arrow pointing to grid"
   style={{
     width: "300px",
@@ -74,7 +85,7 @@ export default function WhoIsItFor() {
         {cat.title}
       </h3>
       <img
-        src={`/src/assets/${cat.img}`}
+        src={cat.img}
         alt={cat.title}
         style={{
           width: "233px",

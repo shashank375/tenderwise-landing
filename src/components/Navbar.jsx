@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
-
+import tenderwiseLogo from "../assets/tenderwise-logo.png"
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [visible, setVisible] = useState(true)
@@ -40,7 +40,7 @@ export default function Navbar() {
 
         <div className="flex items-center">
           <img
-            src="/src/assets/tenderwise-logo.png"
+            src={tenderwiseLogo}
             alt="TenderWise Logo"
             className="h-8 object-contain cursor-pointer"
             onClick={() => navigate("/")}

@@ -1,23 +1,30 @@
 import { Search } from "lucide-react"
 
+import ctaBg from "../assets/cta-bg.png";
+
+import freeAccessIcon from "../assets/icon-free-access.png";
+import fastEasyIcon from "../assets/icon-fast-easy.png";
+import whatsappAlertsIcon from "../assets/icon-whatsapp-alerts.png";
+import trustedSecureIcon from "../assets/icon-trusted-secure.png";
+
 const features = [
   {
-    img: "/src/assets/icon-free-access.png",
+    img: freeAccessIcon,
     title: "100% Free Access",
     sub: "Koi hidden charges nahi",
   },
   {
-    img: "/src/assets/icon-fast-easy.png",
+    img: fastEasyIcon,
     title: "Fast & Easy",
     sub: "Quick search, instant results",
   },
   {
-    img: "/src/assets/icon-whatsapp-alerts.png",
+    img: whatsappAlertsIcon,
     title: "WhatsApp Alerts",
     sub: "Naye tenders ki turant jaankari",
   },
   {
-    img: "/src/assets/icon-trusted-secure.png",
+    img: trustedSecureIcon,
     title: "Trusted & Secure",
     sub: "Data safe, humari priority",
   },
@@ -27,7 +34,7 @@ export default function FinalCTA() {
     <section
       className="relative py-32 text-center"
       style={{
-        backgroundImage: "url('/src/assets/cta-bg.png')",
+        backgroundImage: `url(${ctaBg})`,
         backgroundSize: "100% 100%",
         backgroundPosition: "center center",
         backgroundRepeat: "no-repeat",

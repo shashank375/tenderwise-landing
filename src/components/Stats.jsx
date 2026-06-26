@@ -1,10 +1,16 @@
+import centralIcon from "../assets/icon-central.png";
+import stateIcon from "../assets/icon-state.png";
+import publicIcon from "../assets/icon-public.png";
+import defenceIcon from "../assets/icon-defence.png";
+import gemIcon from "../assets/icon-gem.png";
+
 const categories = [
-  { icon: "/src/assets/icon-central.png", label: "Central Govt" },
-  { icon: "/src/assets/icon-state.png", label: "State Govt" },
-  { icon: "/src/assets/icon-public.png", label: "Public Sector" },
-  { icon: "/src/assets/icon-defence.png", label: "Defence" },
-  { icon: "/src/assets/icon-gem.png", label: "GeM" },
-]
+  { icon: centralIcon, label: "Central Govt" },
+  { icon: stateIcon, label: "State Govt" },
+  { icon: publicIcon, label: "Public Sector" },
+  { icon: defenceIcon, label: "Defence" },
+  { icon: gemIcon, label: "GeM" },
+];
 
 export default function Stats() {
   return (
