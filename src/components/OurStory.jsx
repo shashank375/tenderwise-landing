@@ -1,123 +1,116 @@
-
 export default function OurStory() {
   return (
-    <section id="humari-kahani" className="py-24 px-6 overflow-hidden bg-gradient-to-r from-[#E5DCF3] to-[#FCF8F3]">
-      {/* Main Container - Widened to easily fit both large elements */}
-      <div className="max-w-[1300px] mx-auto flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-[60px]">
-        
-        {/* LEFT COLUMN: Text & Strips (Width bound to exactly 496.67px on desktop) */}
-        <div className="flex flex-col items-center text-center w-full max-w-[496.67px]">
-          
-          <div className="text-[#472C70] font-lato text-[11px] md:text-xs font-bold uppercase tracking-[0.15em] mb-4">
+    <section id="humari-kahani" className="py-24 px-6 overflow-hidden flex justify-center" style={{background: "linear-gradient(135deg, #E5DCF3 0%, #FCF8F3 100%)"}}>
+      
+      <div className="w-full max-w-[1260px] mx-auto flex flex-col lg:flex-row items-center justify-center gap-[10px]">
+
+        {/* LEFT COLUMN */}
+        <div className="flex flex-col items-center text-center w-full lg:w-[522px] shrink-0">
+
+          <div className="bg-[#EEE9FC] text-[#472C70] font-lato text-[12px] font-bold uppercase tracking-[0.15em] mb-6 w-[190px] h-[46px] rounded-full flex items-center justify-center">
             Hamari Kahani
           </div>
-          
-          <h2 className="font-playfair text-4xl md:text-[48px] font-semibold text-[#1F2937] leading-[1.2] tracking-tight mb-[51px] relative z-10">
-            Built by a contractor, <br />
-            <span className="relative inline-block mt-1">
+
+         <h2 className="font-playfair text-4xl md:text-[58px] font-semibold text-[#1F2937] leading-[1.1] md:leading-[62px] tracking-tight mb-12 relative z-10 text-center w-full">
+            <span className="block md:whitespace-nowrap">Built by a contractor,</span>
+            <span className="relative inline-block mt-1 md:mt-2">
               <span className="text-[#472C70] font-playpen">for</span> contractors
-              
-              <svg className="absolute -bottom-3 left-0 w-full text-[#472C70]" viewBox="0 0 200 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 10C30 2 60 8 100 8C140 8 170 2 198 10" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-              </svg>
+          <img 
+  src="/assets/line.png" 
+  alt="Underline" 
+  className="absolute -bottom-[20px] left-0 w-full h-[8px] object-fill" 
+/>
             </span>
           </h2>
 
-          {/* Torn Paper List Items - gap-[16px] matches Figma exactly */}
-          <div className="flex flex-col gap-[16px] w-full items-center">
+          <div className="flex flex-col w-full items-center mt-2">
             
-            {/* Strip 1 - Exact Size & Rotation (2.43 deg) */}
-            <div className="relative w-full lg:w-[496.67px] h-[100px] lg:h-[144.51px] flex items-center transform -rotate-[2.43deg]">
-              <img src="/assets/torn-paper-strip.png" alt="Paper strip" className="absolute inset-0 w-full h-full object-fill drop-shadow-sm opacity-90" />
-              <div className="relative z-10 flex items-center gap-4 px-10 md:px-14 w-full text-left">
-                <div className="bg-[#472C70] rounded-full p-1.5 shrink-0">
-                  <svg className="w-4 h-4 md:w-5 md:h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" /></svg>
+            {/* Strip 1 - Fixed Tailwind rotation syntax */}
+            <div className="relative w-[450px] shrink-0 h-[160px] flex items-center transform -rotate-[2.43deg] z-30">
+              <img src="/assets/torn-paper-strip.png" alt="" className="absolute inset-0 w-full h-full object-fill opacity-90 drop-shadow-sm" />
+              <div className="relative z-10 flex items-center gap-4 px-10 md:px-12 w-full text-left">
+                <div className="bg-[#472C70] rounded-full p-2 shrink-0">
+                  <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" />
+                  </svg>
                 </div>
-                <span className="font-lato font-bold text-[#1F2937] text-[15px] md:text-[18px]">Khud tender bharne ka tajurba</span>
+                <span className="font-lato font-bold text-[#1F2937] text-[18px]">Khud tender bharne ka tajurba</span>
               </div>
             </div>
 
-            {/* Strip 2 - Exact Size & Rotation (-5.2 deg) */}
-            <div className="relative w-full lg:w-[496.67px] h-[100px] lg:h-[144.51px] flex items-center transform -rotate-[-5.2deg]">
-              <img src="/assets/torn-paper-strip.png" alt="Paper strip" className="absolute inset-0 w-full h-full object-fill drop-shadow-sm opacity-90" />
-              <div className="relative z-10 flex items-center gap-4 px-10 md:px-14 w-full text-left">
-                <div className="bg-[#472C70] rounded-full p-1.5 shrink-0">
-                  <svg className="w-4 h-4 md:w-5 md:h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" /></svg>
+            {/* Strip 2 - Fixed rotation syntax AND increased negative margin to -mt-[72px] */}
+            <div className="relative w-[450px] shrink-0 h-[160px] flex items-center transform rotate-[5.2deg] z-20 -mt-[60px]">
+              <img src="/assets/torn-paper-strip.png" alt="" className="absolute inset-0 w-full h-full object-fill opacity-90 drop-shadow-sm" />
+              <div className="relative z-10 flex items-center gap-4 px-10 md:px-12 w-full text-left">
+                <div className="bg-[#472C70] rounded-full p-2 shrink-0">
+                  <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" />
+                  </svg>
                 </div>
-                <span className="font-lato font-bold text-[#1F2937] text-[15px] md:text-[18px]">Contractors ki asli pareshani samajhna</span>
+                <span className="font-lato font-bold text-[#1F2937] text-[18px]">Contractors ki asli pareshani samajhna</span>
               </div>
             </div>
 
-            {/* Strip 3 - Exact Size & Rotation (0 deg) */}
-            <div className="relative w-full lg:w-[496.67px] h-[100px] lg:h-[144.51px] flex items-center transform rotate-0">
-              <img src="/assets/torn-paper-strip.png" alt="Paper strip" className="absolute inset-0 w-full h-full object-fill drop-shadow-sm opacity-90" />
-              <div className="relative z-10 flex items-center gap-4 px-10 md:px-14 w-full text-left">
-                <div className="bg-[#472C70] rounded-full p-1.5 shrink-0">
-                  <svg className="w-4 h-4 md:w-5 md:h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" /></svg>
+            {/* Strip 3 - Increased negative margin to -mt-[72px] */}
+            <div className="relative w-[450px] shrink-0 h-[160px] flex items-center z-10 -mt-[65px]">
+              <img src="/assets/torn-paper-strip.png" alt="" className="absolute inset-0 w-full h-full object-fill opacity-90 drop-shadow-sm" />
+              <div className="relative z-10 flex items-center gap-4 px-10 md:px-12 w-full text-left">
+                <div className="bg-[#472C70] rounded-full p-2 shrink-0">
+                  <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" />
+                  </svg>
                 </div>
-                <span className="font-lato font-bold text-[#1F2937] text-[15px] md:text-[18px]">Profit nahi, contractor pehle</span>
+                <span className="font-lato font-bold text-[#1F2937] text-[18px]">Profit nahi, contractor pehle</span>
               </div>
             </div>
 
           </div>
         </div>
 
-        {/* RIGHT COLUMN: The Pinned Paper Note */}
-        {/* Exact Size (661.33px x 735.58px) */}
-        <div className="relative w-full max-w-[661.33px] h-auto lg:h-[680px] mt-10 lg:mt-0 shrink-0">
-          
-          <img 
-            src="/assets/pinned-paper-bg.png" 
-            alt="Pinned paper note" 
-            className="absolute inset-0 w-full h-full object-fill drop-shadow-lg" 
+       {/* RIGHT COLUMN */}
+        <div className="relative w-full lg:w-[700px] shrink-0 h-auto md:h-[700px]">
+          <img
+            src="/assets/pinned-paper-bg.png"
+            alt="Pinned paper note"
+            className="absolute inset-0 w-full h-full object-fill drop-shadow-lg"
           />
           
-          {/* Centering container: uses h-full and justify-center to suspend text perfectly */}
-          <div className="relative z-10 h-full flex flex-col justify-center px-[40px] md:px-[80px] lg:px-[95px] py-16 lg:py-0 text-left">
+          {/* FIX: Added max-w-[476px] and mx-auto to force the entire block into the exact center of the paper */}
+          <div className="relative z-10 w-full flex flex-col pt-[80px] md:pt-[120px] pl-[40px] md:pl-[140px] md:pr-[60px] pb-[60px] text-left">
             
-            {/* Main Quote */}
-            <h3 className="font-playpen text-[#472C70] text-[32px] md:text-[24px] font-bold leading-tight mb-6">
-              "Government tender <br className="hidden md:block" /> information free honi chahiye."
+            <h3 className="font-playpen text-[#472C70] text-[28px] md:text-[24px] font-semibold leading-[1.2] md:leading-[30px] mb-8 w-full">
+              <span className="block">“Government tender</span>
+              <span className="block">information free honi chahiye.</span>
             </h3>
-            
-            {/* Paragraphs */}
-            <div className="font-lato text-[20px] md:text-[15px] text-[#4B5563] space-y-5 leading-relaxed mb-8">
-              <p>
-                Main khud ek government contractor hoon.<br className="hidden md:block" />
-                Mujhe pata hai tender dhoondhne mein kitna time<br className="hidden md:block" />
-                aur energy jaata hai.
-              </p>
-              <p>
-                Mujhe yeh bhi pata hai ki public information<br className="hidden md:block" />
-                dekhne ke liye paise dena galat hai.
-              </p>
-              <p>
-                Isliye TenderWise banaya. Taaki har contractor,<br className="hidden md:block" />
-                chahe gaav se ho ya shahar se<br className="hidden md:block" />
-                usko tender ki jaankari barabar milni chahiye,<br className="hidden md:block" />
-                bina ek rupaya diye.
-              </p>
+            <img 
+          src="/assets/line.png" 
+          alt="Heading Underline" 
+         className="w-full max-w-[380px] h-[8px] object-contain mb-8 -mt-4" 
+        />
+
+            {/* FIX: Removed the broken 'justify-center' and put 'font-semibold' back in so the text becomes darker/thicker! */}
+            <div className="font-lato text-[16px] md:text-[16px] text-[#4B5563] space-y-6 leading-[1.4] md:leading-[27.2px] mb-10">
+              <p>Main khud ek government contractor hoon.<br className="hidden md:block" />Mujhe pata hai tender dhoondhne mein kitna time <br className="hidden md:block" />aur energy jaata hai.</p>
+              <p>Mujhe yeh bhi pata hai ki public information <br className="hidden md:block" />dekhne ke liye paise dena galat hai.</p>
+              <p>Isliye TenderWise banaya. Taaki har contractor, <br className="hidden md:block" />chahe gaav se ho ya shahar se <br className="hidden md:block" />usko tender ki jaankari barabar milni chahiye, <br className="hidden md:block" />bina ek rupaya diye.</p>
             </div>
 
-            {/* Divider Line */}
-            <hr className="border-[#472C70]/20 mb-5" />
+          <hr style={{borderColor: "#A367FF", borderWidth: "1px", width: "100%", maxWidth: "420px"}} className="mb-6" />
 
-            {/* Footer with Logo */}
-            <div className="flex items-center gap-4">
+            <div className="flex flex-row flex-nowrap items-center gap-4 w-full justify-start pl-4">
               <img 
                 src="/assets/tenderwise-logo-icon.png" 
                 alt="TenderWise Logo" 
-                className="w-10 h-10 object-contain"
+                className="w-12 h-12 object-contain shrink-0" 
               />
-              <div className="flex flex-col">
-                <span className="font-playfair text-[#472C70] text-[20px] font-semibold leading-none mb-1.5">Team TenderWise</span>
-                <span className="font-lato text-gray-500 text-[13px] italic leading-none">Founded by contractor</span>
+              <div className="flex flex-col text-centre">
+                <span className="font-playfair text-[#472C70] text-[22px] font-semibold leading-none mb-1.5 whitespace-nowrap">Team TenderWise</span>
+                <span className="font-lato text-gray-500 text-[14px] italic leading-none whitespace-nowrap">Founded by contractor</span>
               </div>
             </div>
-            
-          </div>
-        </div>
 
+          </div>
+         </div>
       </div>
     </section>
   )

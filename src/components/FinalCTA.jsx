@@ -38,7 +38,7 @@ export default function FinalCTA() {
 
         {/* Heading — Playfair */}
         <h2
-          className="font-playfair text-5xl font-bold text-gray-900 leading-tight mb-6"
+          className="font-playfair text-4xl font-bold text-gray-900 leading-tight mb-6"
         >
           Ready to find <br />
           government <br />
@@ -81,23 +81,22 @@ export default function FinalCTA() {
           {features.map((f, i) => (
             <div
               key={i}
-              className="flex items-center gap-3 px-5 py-5"
-              style={{
-                borderRight: i < features.length - 1
-                  ? "1px solid rgba(0,0,0,0.07)"
-                  : "none",
-              }}
+              className="flex items-center gap-3 px-6 py-6 relative"
             >
+            
+{i > 0 && (
+  <div style={{position: "absolute", left: 0, top: "50%", transform: "translateY(-50%)", height: "50px", width: "1.43px", background: "#EEEAE7"}}></div>
+)}
               <img
                 src={f.img}
                 alt={f.title}
                 style={{ width: "44px", height: "44px", objectFit: "contain", flexShrink: 0 }}
               />
               <div className="text-left">
-                <p className="font-lato text-sm font-semibold text-gray-800 leading-snug">
-                  {f.title}
-                </p>
-                <p className="font-lato text-xs text-gray-400 leading-snug mt-0.5">
+                <p className="font-playfair display text-[20px] font-medium text-[#4E4B4B] leading-snug">
+  {f.title}
+</p>
+                <p className="font-lato text-xs text-[#4E4B4B]leading-snug mt-0.5">
                   {f.sub}
                 </p>
               </div>

@@ -15,11 +15,12 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
 
-          <div className="md:col-span-5 flex flex-col gap-5">
+          <div className="md:col-span-5 flex flex-col gap-5 ">
             <img
               src="/assets/Tenderwise-logo.png"
               alt="TenderWise Logo"
-              className="h-8 object-contain self-start cursor-pointer"
+               className="h-8 object-contain w-auto" 
+  style={{alignSelf: "flex-start"}}
               onClick={() => navigate("/")}
             />
             <p className="text-gray-600 text-sm leading-relaxed max-w-sm">

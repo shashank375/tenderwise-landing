@@ -17,7 +17,7 @@ export default function Stats() {
             style={{
               background: "#EEE9FC",
               fontFamily: "'Lato', sans-serif",
-              color: "#3F3591",
+              color: "#472C70",
             }}
             className="text-xs font-semibold tracking-widest uppercase px-5 py-2 rounded-full"
           >
@@ -28,7 +28,7 @@ export default function Stats() {
         {/* Heading */}
         <h2
           style={{fontFamily: "'Playfair Display', serif"}}
-          className="text-4xl md:text-5xl font-bold text-gray-900 mb-4"
+          className="text-4xl md:text-5xl font-bold text-[#1F2937] mb-4"
         >
           Har tarah ke tenders, ek hi jagah
         </h2>
@@ -36,7 +36,7 @@ export default function Stats() {
         {/* Subtext */}
         <p
           style={{fontFamily: "'Lato', sans-serif"}}
-          className="text-gray-500 text-base mb-12"
+          className="text-[#2E2E2E] text-base mb-12"
         >
           Central se lekar gram panchayat tak, sabhi public tenders <br />
           TenderWise par freely available.

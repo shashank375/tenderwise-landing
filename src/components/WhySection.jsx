@@ -6,7 +6,7 @@ export default function WhySection() {
 
         {/* Header Section */}
         <div className="text-center flex flex-col items-center">
-          <div className="bg-[#EEE9FC] text-[#472C70] font-lato text-[11px] md:text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6">
+          <div className="bg-[#F8F6FF] text-[#472C70] font-lato text-[11px] md:text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6">
             SEEDHI BAAT
           </div>
          {/* Main Heading - Updated to match the md:text-5xl size from your Stats component */}
@@ -31,8 +31,8 @@ export default function WhySection() {
             <div className="flex items-center gap-4 mb-5">
               <img src="/assets/icon-without-tenderwise.png" alt="Without TenderWise Icon" className="w-12 h-12 object-contain" />
               <div>
-                <h3 className="font-playfair text-[26px] font-bold text-gray-900">Without TenderWise</h3>
-                <p className="font-lato text-gray-500 text-sm mt-1">Jaisa abhi tak chalta aaya hai</p>
+                <h3 className="font-playfair text-[26px] font-bold text-[#2E2E2E]">Without TenderWise</h3>
+                <p className="font-lato text-[#5C5C5C] text-sm mt-1">Jaisa abhi tak chalta aaya hai</p>
               </div>
             </div>
             
@@ -67,7 +67,7 @@ export default function WhySection() {
               <img src="/assets/icon-with-tenderwise.png" alt="With TenderWise Icon" className="w-12 h-12 object-contain" />
               <div>
                 <h3 className="font-playfair text-[26px] font-bold text-white">With TenderWise</h3>
-                <p className="font-lato text-[#D8CFF2] text-sm mt-1">Contractors ka apna platform</p>
+                <p className="font-lato text-[#CDBCFF] text-sm mt-1">Contractors ka apna platform</p>
               </div>
             </div>
             
@@ -93,7 +93,7 @@ export default function WhySection() {
             </ul>
             
             {/* Reduced mt-10 to mt-8, added flex, whitespace-nowrap, and lowered text size */}
-            <div className="mt-8 bg-white/10 backdrop-blur-md rounded-2xl py-3.5 px-4 md:px-6 flex justify-center items-center border border-white/20 shadow-sm">
+            <div className="mt-8 py-3.5 px-4 md:px-6 flex justify-center items-center" style={{background: "linear-gradient(to right, rgba(255,255,255,0.4) 10%, rgba(255,255,255,0) 100%)", backdropFilter: "blur(42px)", WebkitBackdropFilter: "blur(42px)", borderRadius: "18px", border: "1.5px solid rgba(255,255,255,0.5)"}}>
               <span className="font-playfair text-[15px] md:text-[17px] text-[#EAE4F7] whitespace-nowrap flex items-center">
                 Aapka tender dekhne ka kharcha: <strong className="text-[#4ade80] font-bold text-xl md:text-2xl ml-1.5 tracking-wide">₹0</strong>
               </span>

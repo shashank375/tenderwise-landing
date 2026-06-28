@@ -10,14 +10,15 @@ export default function Mission() {
 
   return (
     // Section needs extra padding at the bottom (pb-[400px]) to reveal the skyline background
-    <section id="mission" className="relative bg-[#FFFFFF] pt-24 pb-24 md:pb-32 overflow-hidden">
+    <section id="mission" className="relative bg-[#FCF8F3] pt-24 pb-0 overflow-hidden">
       
       {/* Absolute Bottom Skyline Background */}
       {/* mix-blend-multiply seamlessly blends the sketch's white background into the page */}
      <img 
         src="/assets/mission-bg.png"
         alt="City Skyline Sketch" 
-        className="absolute bottom-0 left-0 w-full h-[350px] md:h-[500px] lg:h-[650px] object-cover object-bottom z-0 mix-blend-multiply opacity-90"
+        className="absolute bottom-0 left-0 w-full object-cover object-bottom z-0 mix-blend-multiply opacity-90"
+style={{ height: "50%" }}
       />
 
       {/* Main Content Container (relative z-10 keeps it above the background image) */}
@@ -27,16 +28,24 @@ export default function Mission() {
         <div className="flex flex-col items-center mb-16">
           
           {/* "The people who" with horizontal lines */}
-          <div className="flex items-center justify-center gap-4 mb-3">
-            <div className="h-[1px] w-8 md:w-12 bg-gray-400"></div>
-            <span className="font-playfair text-[#1F2937] font-medium text-[15px] md:text-[17px]">
+          <div className="flex items-center justify-center gap-4 md:gap-6 mb-3">
+            <img 
+              src="/assets/line-left.png" 
+              alt="Left Line" 
+              className="w-[60px] md:w-[100px] h-auto object-contain" 
+            />
+            <span className="font-playfair text-[#482D71] font-semibold text-[20px] md:text-[20px]">
               The people who
             </span>
-            <div className="h-[1px] w-8 md:w-12 bg-gray-400"></div>
+            <img 
+              src="/assets/line-right.png" 
+              alt="Right Line" 
+              className="w-[60px] md:w-[100px] h-auto object-contain" 
+            />
           </div>
           
           {/* Main Title (Playfair) */}
-          <h2 className="font-playfair text-4xl md:text-[48px] font-semibold text-[#1F2937] leading-tight mb-5">
+          <h2 className="font-playfair text-4xl md:text-[48px] text-[#1F2937] leading-tight mb-5">
             Build India <span className="text-[#472C70] font-playpen ">every day.</span>
           </h2>
           
@@ -47,7 +56,7 @@ export default function Mission() {
         </div>
 
         {/* --- CARDS GRID --- */}
-        <div className="flex flex-wrap justify-center gap-4 md:gap-6 mb-16">
+        <div className="flex flex-wrap justify-center gap-4 md:gap-6 mb-10">
           {cards.map((card, index) => (
             <div 
               key={index} 
@@ -76,8 +85,9 @@ export default function Mission() {
           ))}
         </div>
 
-        {/* --- BOTTOM TEXT SECTION --- */}
-        <div className="max-w-[850px] mx-auto flex flex-col items-center">
+      
+       {/* --- BOTTOM TEXT SECTION --- */}
+<div className="max-w-[850px] mx-auto flex flex-col items-center mb-60">
           
           {/* Paragraph (Lato) */}
           <p className="font-lato text-[#4B5563] text-[15px] md:text-[16px] leading-relaxed mb-8">
